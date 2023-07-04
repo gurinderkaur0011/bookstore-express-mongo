@@ -1,4 +1,8 @@
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 export default {
-    port: 1337,
-    dbUri:"mongodb+srv://gurinderkaur0011:dbH9GOy8vsKEQXgd@cluster0.okf3lit.mongodb.net/hyperhire"
+    port: process.env.PORT,
+    dbUri: process.env.DATABASE_URL
 }
